@@ -1,0 +1,17 @@
+body{
+background-image:url(bkg.jpg);
+background-size:100%;
+ background-repeat: no-repeat;
+}
+.tab{
+padding:50px;
+border: solid 8px;
+border-spacing:15px;
+color:black;
+}
+.email:invalid {
+    border: 3px solid red;
+}
+.date:invalid {
+    border: 3px solid red;
+}

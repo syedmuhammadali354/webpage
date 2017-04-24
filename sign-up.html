@@ -1,0 +1,79 @@
+<html>
+<head>
+<title> Fa14-SE6A-002 </title>
+<link rel="stylesheet" type="text/css" href="up.css"/>
+<script type="text/javascript" src="func.js"></script>
+</head>
+<center>
+<br>
+<br>
+
+	   <h2>Sign Up! </h2>
+	   
+<table class="tab">
+
+   <form>
+	<tr> <td>  First name </td>
+	<td> <input type="text" onkeypress="return valid(event);" placeholder="Enter your First Name"  ></td> </tr>
+	<tr><td>  Middle name </td>
+	<td> <input type="text" onkeypress="return valid(event);" placeholder="Enter your Second Name" ></td> </tr>
+	<tr> <td>  Last name </td>
+	<td> <input type="text" onkeypress="return valid(event);" placeholder="Enter your Last Name" ></td> </tr>
+	<tr> <td>  Image of User </td>
+	<td> <input type="file" name="pic" accept="image/*"> </td>
+	</tr>
+	<tr> <td>  Email address </td>
+	<td> <input type="email" placeholder="Enter your Email" class="email" ></td> </tr>
+	<tr> <td>  Date of Birth </td>
+	<td> <input type="date" class="date" ></td> </tr>
+	 <tr> <td> Gender </td>
+	 <td> <select name="dropdown">
+	<option value="Male">Male</option>
+	<option value="Female">Female</option>
+	<option value="Other">Other</option>
+	</select>
+	</td>
+	</tr>
+  <tr> <td>  Mobile </td>
+	<td> <input type="text" placeholder="Enter your Mobile Number" onkeypress="return val1(event);"></td> </tr>
+	<tr> <td>  Postal Address </td>
+	<td> <input type="text" placeholder="Enter your Postal Address" required ></td> </tr>
+	<tr> <td>  Permanent Address </td>
+	<td> <input type="text" required  placeholder="Enter your Permanent Address"  ></td> </tr>
+	<tr> <td>  Domicile District </td>
+	 <td> <select id="city" onchange="change();">
+	 <option value="" selected ></option>
+	<option value="rawalpindi" >Rawalpindi</option>
+	<option value="lahiore">Lahore</option>
+	<option value="dgkhan">DgKhan</option>
+	<option value="multan">Multan</option>
+	<option value="other">Other</option>
+	</select>	
+	</td>
+	</tr>
+	<tr> <td>  Password </td>
+	<td  ><input type="password" id="pass1" onkeypress="passcheck();" minlength="5"   placeholder="Enter your password" ><span id="message"></span></td> </tr>
+	<tr> <td>  Re-Type Password </td>
+	<td> <input type="password" id="pass2" placeholder="Re-Type your password" onkeypress="valpass();"><span id="mess"></span></td> </tr>
+	<tr> <td>  Academic Information </td>
+	<td> <input type="text" placeholder="Enter your Academic Information" /></td> </tr>
+	<tr> <td> <center> 
+	<input type="submit" value="Sign up"> </td> <td> 
+		
+	 <button type="button">Cancel</button> 
+	 </center>
+		</td>
+	 </tr>
+	 
+	</form>
+	
+  
+	 
+	
+	
+	</table>
+
+	
+</body>
+
+</html>
