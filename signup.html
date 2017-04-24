@@ -1,0 +1,91 @@
+<!Doctype html>
+<html>
+<head>
+	<title>
+	Sign Up Page
+	</title>
+	<script src="java.js">
+</script>
+	<link rel="icon" href="hope1.ico">
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<form action="ali.html">
+<div class="center">
+<h1 class="color">Sign Up Page</h1>
+<table>
+<tr>
+	<td><label class="awesome color">Select Color:</label></td>
+	<td><input type="color" id="colour" onchange="changecolor();"/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">First Name:</label></td>
+	<td><input class="awesome color" id="name1" type="text" required placeholder="Enter Your First Name" onkeypress="return validate(event);"/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Middle Name:</label></td>
+	<td><input class="awesome color" id="name1" type="text" required placeholder="Enter Your Middle Name" onkeypress="return validate(event);"/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Last Name:</label></td>
+	<td><input class="awesome color" id="name1" type="text" required placeholder="Enter Your Last Name" onkeypress="return validate(event);"/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Upload Your Image:</label></td>
+	<td><input class="awesome color" type="file" required/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Email Address:</label></td>
+	<td><input class="awesome color" type="email" id="userEmail" required placeholder="Enter your Email Address"/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Date of Birth:</label></td>
+	<td><input class="awesome color" type="date" required value="Birhthday"/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Gender:</label></td>
+	<td><input class="awesome color" type="radio" required name="gender" value="Male"/> Male</td>
+	<td><input class="awesome color" type="radio" required name="gender" value="Female"/>Female</td>
+</tr>
+
+<tr>
+	<td><label class="awesome color">Mobile Number:</label></td>
+	<td><input class="awesome color" type="text" required placeholder="Enter Your Mobile Number" onkeypress="return validatenumber(event);"/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Postal Address:</label></td>
+	<td><input class="awesome color" type="address" required placeholder="Enter Your Postal Address"/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Permanent Address:</label></td>
+	<td><input class="awesome color" type="address" required placeholder="Enter Your Permanent Address"/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Domicile District:</label></td>
+	<td><input class="awesome color" type="text" required placeholder="Enter Your Domicile District"/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Password:</label></td>
+	<td><input type="password" id="pass" placeholder="Enter Your Password" class="awesome color" autocomplete="off" onkeyup="match();" /></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Re-type Password:</label></td>
+	<td><input type="password" id="repass"placeholder="Enter Re-type Password" class="awesome color" autocomplete="off" onkeyup="match();" /></td>
+</tr>
+<tr>
+	<td colspan="2"><label id="lbl_error" class="status"> </label></td>
+	<td></td>
+</tr>
+<tr>
+	<td colspan="2"><label id="lbl_status" class="status"></label></td>
+	<td></td>
+</tr>
+<tr class="middle">
+	<td colspan="2"><input type="submit" value="Sign Up" onclick="return validate();" class="awesome color"/></td>
+	<td></td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+</html>
