@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <title>
+  Welcome
+  </title>
+</head>
+<body>
+<h1>
+Welcome
+</h1>
+<p> Welcome to your profile
+</p>
+<br>
+<p>
+End of the profile
+<br>
+<h2>
+Good Bye
+</h2>
+</p>
+</body>
+</html>
