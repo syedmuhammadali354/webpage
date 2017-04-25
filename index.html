@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<form>
+<div class="center">
+<H2 class="color">Create New Password</H2>
+<table>
+<tr>
+	<td><label class="awesome color">Select Color:</label></td>
+	<td><input type="color" id="colour" onchange="changecolor();"/></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Enter Password</label></td>
+	<td><input type="password" id="pass"  class="awesome color" autocomplete="off" onkeyup="match();" /></td>
+</tr>
+<tr>
+	<td><label class="awesome color">Enter Password</label></td>
+	<td><input type="password" id="repass" class="awesome color" autocomplete="off" onkeyup="match();" /></td>
+</tr>
+<tr>
+	<td colspan="2"><label id="lbl_error" class="status"> </label></td>
+	<td></td>
+</tr>
+<tr>
+	<td colspan="2"><label id="lbl_status" class="status"></label></td>
+	<td></td>
+</tr>
+<tr class="middle">
+	<td colspan="2"><input type="submit" onclick="return validate();" class="awesome color"/></td>
+	<td></td>
+</tr>
+</table>
+</div>
+</form>
+<script src="java.js">
+</script>
+</body>
+</html>

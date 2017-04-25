@@ -75,3 +75,34 @@ function changecolor(){
 	}
 };
 
+function validate(e){
+	var code=e.charCode;
+	if(code >= 65 && code <= 90 || code >= 97 && code <= 122){
+		return true;
+	}
+	else{
+		return false;
+	}
+};
+function validatenumber(e){
+	var code=e.charCode;
+	if(code >= 48 && code <= 57 ){
+		return true;
+	}
+	else{
+		return false;
+	}
+};
+
+function validatemail() {
+
+    var email = document.getElementById("userEmail");
+    var valid = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!valid.test(userEmail.value)) {
+    alert(' email address is not valid');
+    return false;
+    
+ 	}
+
+};
